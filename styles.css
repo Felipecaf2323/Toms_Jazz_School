@@ -128,7 +128,8 @@ h1 {
     margin-top: -2em;
     display: flex;
     list-style-type: none;
-    margin-left: 4.5em;
+    margin-left: 1.5em;
+    flex: 1;
     position: relative; /*Aqui é para poder ajustar a seta__direita dentro de cada caixa*/
     justify-content: center;
     flex-wrap: wrap;
@@ -152,7 +153,7 @@ h1 {
     border-width: 0,01em;
     border-style: solid;
     border-color: var(--preto);
-    width: 272px;
+    width: 257px;
     height: 306px;
     
     position: relative;
