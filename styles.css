@@ -1,0 +1,299 @@
+:root {
+    --preto: #000000;
+    --branco: #FFFFFF;
+    --laranja-escuro: #ED4D1B;
+    --laranja-claro: #FF9A3C;
+    --font-principal: 'Roboto'
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-principal);
+}
+
+body {
+    background: linear-gradient(to right, #FFE7D1, #FFF2E5);
+    font-size: 24px;
+    color: var(--preto);
+    font-weight: 500;
+    margin: 0 1.5em;
+}
+
+
+
+.header {
+    display: flex;
+    margin-right: 4.5em;
+    margin-top: 1em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    font-size: 40px;
+    font-weight: 900;
+    margin-left: 3em;
+}
+
+.header__link a {
+    text-decoration: none;
+    color: var(--preto);
+    font-size: 20px;
+    margin-right: 2em;
+}
+
+.header__lista {
+    display: flex;
+    margin-left: 10em;
+    list-style-type: none;
+    margin-right: -2.32em;
+}
+
+.container__botao {
+    text-align: center;
+    width: 240px;
+    background-color: var(--laranja-escuro);
+    padding: 0.40em;
+    text-align: center;
+    margin-left: 10em;
+    color: var(--preto);
+    text-decoration: none;
+    display: block;
+    border-width: 0,01em;
+    border-style: solid;
+    border-color: var(--preto);
+    box-shadow: 4.5px 4.5px 8px rgba(0, 0, 0, 1);
+}
+
+
+
+.principal {
+    background-image: url("img/banda_teste.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100vh;
+    background-position-y: 1.5em;
+    background-position-x: 20em;
+    background-size: 63% 75%;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 35% 65%;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 64px;
+}
+
+.destaque {
+    transform: translateY(-40%);
+}
+
+.container__caixa {
+    margin: 3em 0 0 4.5em;
+}
+
+.container__descricao {
+    margin-top: 1.4em;
+    font-size: 24px;
+}
+
+.laranja {
+    font-weight: 900;
+    font-size: 64px;
+    color: var(--laranja-escuro);
+}
+
+.botao__secundario {
+    margin-top: 1.75em;
+    margin-left: 0;
+}
+
+.arrow {
+    margin-left: 7.3em;
+    margin-top: 1em;
+}
+
+
+
+.secundario {
+    margin-bottom: -3.7em;
+}
+
+.lista {
+    margin-top: -2em;
+    display: flex;
+    list-style-type: none;
+    margin-left: 4.5em;
+    position: relative; /*Aqui é para poder ajustar a seta__direita dentro de cada caixa*/
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.escuro {
+    background-color: var(--laranja-escuro);
+    margin-bottom: 0.8em;
+}
+
+.claro {
+    background-color: var(--laranja-claro);
+    margin-top: 0.8em;
+    height: 350px;
+}
+
+.lista__item {
+    padding: 0.5em;
+    margin-right: 0.7em;
+    box-shadow: 4.5px 4.5px 8px rgba(0, 0, 0, 1);
+    border-width: 0,01em;
+    border-style: solid;
+    border-color: var(--preto);
+    width: 272px;
+    height: 306px;
+    
+    position: relative;
+}
+
+.lista__descricao {
+    font-size: 16px;
+}
+
+.conteudo__lista {
+    margin-left: 0.8em;
+    margin-top: 0.8em;
+}
+
+h3 {
+    font-weight: 900;
+    margin: 0.7em 0;
+}
+
+.seta__direita {
+    position: absolute; /* Adicionando posicionamento absoluto */
+    top: 90%; /* Posiciona a seta verticalmente no meio da "lista__item" */
+    right: 0.8em; /* Posiciona a seta à direita da "lista__item" */
+    transform: translateY(-50%); /* Centraliza verticalmente a seta */
+}
+
+
+
+
+h2 {
+    font-weight: 900;
+    text-align: center;
+    font-size: 64px;
+    margin-top: 2.5em;
+}
+
+.botao__terciario {
+    margin: auto; /* Define margens automáticas para centralizar o elemento */
+    display: block; /* Certifica-se de que o elemento ocupará a largura total disponível */
+    margin-top: 3em;    
+    margin-bottom: 5em;
+} 
+
+
+
+footer {
+    margin: 2.5em 4.5em ;
+    margin-top: 2.5em;
+    display: grid;
+    grid-template-columns: 35% 8% 57%;
+}
+
+.maior {
+    font-weight: 900;
+    font-size: 44px;
+}
+
+.footer__descricao {
+    margin-top: 1em;
+    font-size: 24px;
+}
+
+.footer__lista {
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.footer__item {
+    margin-top: 1em;
+}
+
+.footer__link {
+    font-size: 24px;
+    color: var(--preto);
+    text-decoration: none;
+}
+
+.primeiro {
+    margin-top: 0;
+}
+
+
+.footer__direita {
+    margin-left: 5em;
+    text-align: left;
+}
+
+footer input[type="text"] {
+    box-shadow: 0 0 0 2dp #000; /* Sombra com elevação de 2dp */
+    border: 2px solid #000; /* Borda com largura de 2px */
+    width: 575px; /* Largura de 560px */
+    height: 26px; /* Altura de 48px */
+    background-color: #fff; /* Cor de fundo branca */
+    padding: 10px; /* Espaçamento interno de 10px */
+    border-width: 0,01em;
+    border-style: solid;
+    border-color: var(--preto);
+    box-shadow: 4.5px 4.5px 8px rgba(0, 0, 0, 1);
+    margin-top: 1.5em;
+}
+
+::placeholder {
+    font-size: 16px; /* Tamanho de fonte desejado para o placeholder */
+    text-align: left;
+    justify-content: center;
+}
+
+.input {
+    display: flex;
+    text-align: center;
+}
+
+.footer__email {
+    font-size: 24px;
+}
+
+.botao__quaternario {
+    margin-left: 0;
+    margin-top: 1.45em;
+}
+
+
+
+.greenwich {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 2.4%; /* Posiciona a linha no meio da tela horizontalmente */
+    width: 1px; /* Largura da linha */
+    background-color: #000000; /* Cor da linha */
+}
+
+.direita {
+    left: 97.55%;
+}
+
+.equador {
+    margin-top: 1em;
+    border-top: 1px solid #000000;
+}
+
+.divisao {
+    margin-top: 5em;
+}
